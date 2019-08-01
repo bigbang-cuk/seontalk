@@ -89,17 +89,17 @@ public class ChatImgPage extends JFrame {
 								e3.printStackTrace();
 							}
 						}
-					}
-					int result3 = JOptionPane.showConfirmDialog(null
-							, "다운로드가 완료되었습니다\n폴더를 여시겠습니까?", "다운로드 성공"
-							, JOptionPane.YES_NO_OPTION);
-					if(result3==JOptionPane.YES_OPTION) {
-						try {
-							Desktop desktop = Desktop.getDesktop();
-							File folder = new File(root);
-							desktop.open(folder);
-						} catch (Exception e2) {
-						e2.printStackTrace();
+						int result3 = JOptionPane.showConfirmDialog(null
+								, "다운로드가 완료되었습니다\n폴더를 여시겠습니까?", "다운로드 성공"
+								, JOptionPane.YES_NO_OPTION);
+						if(result3==JOptionPane.YES_OPTION) {
+							try {
+								Desktop desktop = Desktop.getDesktop();
+								File folder = new File(root);
+								desktop.open(folder);
+							} catch (Exception e2) {
+								e2.printStackTrace();
+							}
 						}
 					}
 				}
