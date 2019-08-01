@@ -110,13 +110,13 @@ public class Login extends JFrame {
 	public void initLogo() {
 		jp_logo = new JPanel() {
 			public void paintComponent(Graphics g) {
-				Image img = new ImageIcon(FilePath.SrcPath+"aloe.png").getImage();
+				Image img = new ImageIcon(FilePath.SrcPath+"선토끼.png").getImage();
 				Graphics2D g2 = (Graphics2D)g;
 				g2.drawImage(img, 0, 0, null);
 				setOpaque(true);
 			}
 		};
-		jp_logo.setBounds(67, 70, 240, 240);
+		jp_logo.setBounds(80, 70, 240, 240);
 		add(jp_logo);
 	}
 	

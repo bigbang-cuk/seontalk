@@ -80,6 +80,7 @@ public class ChatPopup extends JDialog {
 				if(1==rVO.getStatus()) {
 					room.initLocation();
 					room.setVisible(true);
+					room.jsp_chat.getVerticalScrollBar().setValue(room.jsp_chat.getVerticalScrollBar().getMaximum());
 					dispose();
 				}
 				else {

@@ -151,6 +151,7 @@ public class ChatRow extends JPanel{
 						if(1==rVO.getStatus()) {
 							room.initLocation();
 							room.setVisible(true);
+							room.jsp_chat.getVerticalScrollBar().setValue(room.jsp_chat.getVerticalScrollBar().getMaximum());
 						}
 						else {
 							JOptionPane.showMessageDialog(null, "DB Connection Error");
