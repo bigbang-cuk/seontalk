@@ -1,0 +1,9 @@
+package seontalk.thread;
+
+public class ServerChatThread extends Thread {
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+}

@@ -1,0 +1,16 @@
+package seontalk.vo;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class VOList implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private List<Object> memberList;
+	private List<Object> chatList;
+	private List<Object> postList;
+	private List<Object> replyList;
+	private List<Object> chatLogList;
+	private List<Object> attachList;
+	private int protocol;
+
+}

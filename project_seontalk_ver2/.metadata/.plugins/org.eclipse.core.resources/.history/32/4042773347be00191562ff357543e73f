@@ -1,0 +1,58 @@
+package seontalk.vo;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class DaoVO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private List<Object> memberList;
+	private List<Object> chatList;
+	private List<Object> postList;
+	private List<Object> replyList;
+	private List<Object> chatLogList;
+	private List<Object> attachList;
+	private int protocol;
+	public List<Object> getMemberList() {
+		return memberList;
+	}
+	public void setMemberList(List<Object> memberList) {
+		this.memberList = memberList;
+	}
+	public List<Object> getChatList() {
+		return chatList;
+	}
+	public void setChatList(List<Object> chatList) {
+		this.chatList = chatList;
+	}
+	public List<Object> getPostList() {
+		return postList;
+	}
+	public void setPostList(List<Object> postList) {
+		this.postList = postList;
+	}
+	public List<Object> getReplyList() {
+		return replyList;
+	}
+	public void setReplyList(List<Object> replyList) {
+		this.replyList = replyList;
+	}
+	public List<Object> getChatLogList() {
+		return chatLogList;
+	}
+	public void setChatLogList(List<Object> chatLogList) {
+		this.chatLogList = chatLogList;
+	}
+	public List<Object> getAttachList() {
+		return attachList;
+	}
+	public void setAttachList(List<Object> attachList) {
+		this.attachList = attachList;
+	}
+	public int getProtocol() {
+		return protocol;
+	}
+	public void setProtocol(int protocol) {
+		this.protocol = protocol;
+	}
+
+}

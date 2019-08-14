@@ -1,0 +1,5 @@
+package seontalk.thread;
+
+public class ServerChatThread extends Thread {
+
+}

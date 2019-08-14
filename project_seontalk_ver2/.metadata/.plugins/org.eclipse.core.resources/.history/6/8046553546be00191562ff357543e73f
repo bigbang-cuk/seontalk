@@ -1,0 +1,7 @@
+package seontalk.vo;
+
+import java.io.Serializable;
+
+public class VOList implements Serializable {
+
+}

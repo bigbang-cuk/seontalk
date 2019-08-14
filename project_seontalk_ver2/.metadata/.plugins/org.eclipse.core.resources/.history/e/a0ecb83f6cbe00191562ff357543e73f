@@ -1,0 +1,27 @@
+package seontalk.thread;
+
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+
+public class ServerChatThread extends Thread {
+	Server server;
+	Socket client2;
+	ObjectOutputStream oos;
+	ObjectInputStream ois;
+	
+	public ServerChatThread(Server server,Socket client2) {
+		this.server = server;
+		this.client2 = client2;
+	}
+	public void send(String msg) {
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+	}
+}

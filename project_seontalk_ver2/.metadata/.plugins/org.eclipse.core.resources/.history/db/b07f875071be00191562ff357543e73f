@@ -1,0 +1,22 @@
+package seontalk.thread;
+
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+import seontalk.view.MainPage;
+
+public class ClientChatThread extends Thread {
+	MainPage page;
+	ObjectOutputStream oos;
+	ObjectInputStream ois;
+	public ClientChatThread(MainPage page) {
+		this.page = page;
+		this.oos = page.coos;
+		this.ois = page.cois;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+	}
+}
